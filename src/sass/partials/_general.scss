@@ -13,3 +13,15 @@
   font-size: 20px;
   text-rendering: optimizeLegibility;
 }
+
+.row {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1140px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
