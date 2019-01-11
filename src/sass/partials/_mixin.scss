@@ -1,12 +1,23 @@
 // === GOOGLE FONTS ===
-
 @mixin google-font($font) {
   $font: unquote($font);
   @import url(https://fonts.googleapis.com/css?family=#{$font});
 }
 
-// === BORDER ===
+// === BUTTONS ===
+@mixin btn {
+  display: inline-block;
+  padding: 10px 30px;
+  font-weight: 300;
+  text-decoration: none;
+  border-radius: 200px;
+  transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+@mixin btn-hov {
+  background-color: $org-dark;
+}
 
+// === BORDER ===
 @mixin border() {
   border: 2px solid gray;
 }

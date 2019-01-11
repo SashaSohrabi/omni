@@ -1,3 +1,4 @@
+/* BASIC SETUP */
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(../images/raster/hero.jpg);
@@ -7,7 +8,6 @@ header {
 }
 
 .hero-text-box {
-  @include border;
   position: absolute;
   width: 1140px;
   top: 50%;
@@ -15,6 +15,54 @@ header {
   transform: translate(-50%, -50%);
 }
 
+/* HEADINGS */
 h1 {
+  color: #fff;
   margin: 0;
+  margin-bottom: 20px;
+  font-size: 2.4rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  word-spacing: 4px;
+}
+
+/* BUTTONS */
+.btn {
+  &:link,
+  &:visited {
+    @include btn;
+  }
+  &:hover,
+  &:active {
+    @include btn-hov;
+  }
+}
+
+.btn-full {
+  &:link,
+  &:visited {
+    background-color: $org;
+    border: 1px solid $org;
+    color: #fff;
+    margin-right: 15px;
+  }
+  &:hover,
+  &:active {
+    background-color: $org-dark;
+    border: 1px solid $org-dark;
+  }
+}
+
+.btn-ghost {
+  &:link,
+  &:visited {
+    border: 1px solid $org;
+    color: $org;
+  }
+  &:hover,
+  &:active {
+    border: 1px solid $org-dark;
+    color: #fff;
+  }
 }
