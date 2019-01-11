@@ -4,3 +4,9 @@
   $font: unquote($font);
   @import url(https://fonts.googleapis.com/css?family=#{$font});
 }
+
+// === BORDER ===
+
+@mixin border() {
+  border: 2px solid gray;
+}
