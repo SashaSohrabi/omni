@@ -1,0 +1,49 @@
+.steps {
+  background-color: #f4f4f4;
+}
+.steps-box {
+  a {
+    text-decoration: none;
+  }
+  &:first-child {
+    margin-top: 30px;
+    text-align: right;
+    padding-right: 3%;
+  }
+
+  &:last-child {
+    padding-left: 3%;
+    margin-top: 70px;
+  }
+
+  .app-screen {
+    width: 40%;
+  }
+}
+
+.works-step {
+  margin-bottom: 50px;
+  &:last-of-type {
+    margin-bottom: 80px;
+  }
+  div {
+    color: $orange;
+    border: 2px solid $orange;
+    border-radius: 50%;
+    height: 55px;
+    width: 55px;
+    text-align: center;
+    padding: 5px;
+    float: left;
+    font-size: 1.5rem;
+    margin-right: 25px;
+  }
+}
+
+.btn-app {
+  img {
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+  }
+}
