@@ -1,0 +1,46 @@
+.plans {
+  background-color: $light-grey;
+}
+
+.plan-box {
+  background-color: #fff;
+  border-radius: 5px;
+  width: 90%;
+  margin-left: 5%;
+  box-shadow: 0 2px 2px #efefef;
+  ul {
+    list-style: none;
+    li {
+      padding: 5px 0;
+    }
+  }
+}
+
+.plan-box div {
+  padding: 15px;
+  border-bottom: 1px solid #e8e8e8;
+  &:first-child {
+    background-color: #fcfcfc;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+  }
+  &:last-child {
+    text-align: center;
+    border: none;
+  }
+}
+
+.plan-price {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  font-weight: 100;
+  color: $orange;
+  span {
+    font-size: 0.9rem;
+    font-weight: 300;
+  }
+}
+
+.plan-price-meal {
+  font-size: 0.8rem;
+}
