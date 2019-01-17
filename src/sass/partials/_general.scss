@@ -9,16 +9,16 @@
 
 :root {
   background: #fff;
-  color: #555;
+  color: $grey;
   font-family: "Lato", "Arial", sans-serif;
   font-weight: 300;
   font-size: 20px;
   text-rendering: optimizeLegibility;
 }
 
+/*LINKS*/
 a {
   text-decoration: none;
-  color: #555;
 }
 
 .clearfix {
@@ -98,4 +98,24 @@ h3 {
 
 section {
   padding: 80px 0;
+}
+
+/* ICONS */
+.icon-big {
+  font-size: 3.5rem;
+  display: block;
+  color: $orange;
+  margin-bottom: 10px;
+}
+
+.icon-small {
+  display: inline-block;
+  width: 30px;
+  text-align: center;
+  color: $orange;
+  font-size: 1.2rem;
+  line-height: 1.2;
+  vertical-align: middle;
+  margin-top: -4px;
+  margin-right: 10px;
 }
