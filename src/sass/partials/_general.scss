@@ -5,6 +5,9 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  &:focus {
+    outline: none;
+  }
 }
 
 :root {
@@ -85,14 +88,44 @@ h3 {
 }
 
 /* BUTTONS */
-.btn {
+.btn:link,
+.btn:visited,
+input[type="submit"] {
+  @include btn;
+}
+
+.btn:hover,
+.btn:active,
+input[type="submit"]:hover,
+input[type="submit"]:active {
+  @include btn-hov;
+}
+
+.btn-full:link,
+.btn-full:visited,
+input[type="submit"] {
+  background-color: $orange;
+  border: 1px solid $orange;
+  color: #fff;
+  margin-right: 15px;
+}
+
+.btn-full:hover,
+.btn-full:active {
+  background-color: $dark-orange;
+  border: 1px solid $dark-orange;
+}
+
+.btn-ghost {
   &:link,
   &:visited {
-    @include btn;
+    border: 1px solid $orange;
+    color: $orange;
   }
   &:hover,
   &:active {
-    @include btn-hov;
+    border: 1px solid $dark-orange;
+    color: #fff;
   }
 }
 

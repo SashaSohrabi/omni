@@ -16,34 +16,6 @@ header {
   transform: translate(-50%, -50%);
 }
 
-.btn-full {
-  &:link,
-  &:visited {
-    background-color: $orange;
-    border: 1px solid $orange;
-    color: #fff;
-    margin-right: 15px;
-  }
-  &:hover,
-  &:active {
-    background-color: $dark-orange;
-    border: 1px solid $dark-orange;
-  }
-}
-
-.btn-ghost {
-  &:link,
-  &:visited {
-    border: 1px solid $orange;
-    color: $orange;
-  }
-  &:hover,
-  &:active {
-    border: 1px solid $dark-orange;
-    color: #fff;
-  }
-}
-
 .logo {
   width: 100px;
   height: auto;
