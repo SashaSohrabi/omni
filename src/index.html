@@ -380,7 +380,7 @@
     <section class="form">
       <div class="row"><h2>We're happy to hear from you</h2></div>
       <div class="row">
-        <form class="contact-form" autocomplete="off" onsubmit="redirect()">
+        <form class="contact-form" autocomplete="off" onsubmit="redirect()" novalidate>
           <div class="row">
             <div class="col span-1-of-3"><label for="name">Name</label></div>
             <div class="col span-2-of-3">
@@ -389,6 +389,7 @@
                 name="name"
                 id="name"
                 placeholder="Your name"
+                title="Please type your name."
                 required
               />
             </div>
@@ -410,7 +411,7 @@
               <label for="find-us">How did you find us?</label>
             </div>
             <div class="col span-2-of-3">
-              <select name="find-us" id="find-us" required>
+              <select name="find-us" id="find-us" title="Please choose one option." required>
                 <option></option>
                 <option value="friends">Friends</option>
                 <option value="search">Search engine</option>
@@ -423,15 +424,15 @@
             <div class="col span-1-of-3"><label>Newsletter?</label></div>
             <div class="col span-2-of-3">
               <div class="form-group">
-                <input type="checkbox" id="html" />
-                <label for="html"></label> Yes, please
+                <input type="checkbox" id="news" checked/>
+                <label for="news"></label> Yes, please
               </div>
             </div>
           </div>
           <div class="row">
             <div class="col span-1-of-3"><label>Drop us a line</label></div>
             <div class="col span-2-of-3">
-              <textarea name="message" placeholder="Your message"></textarea>
+              <textarea name="message" placeholder="Your message" title="Please write your message." maxlength="150" required></textarea>
             </div>
           </div>
           <div class="row">
@@ -472,13 +473,16 @@
         </div>
       </div>
       <div class="row">
-        <p>
-          Copyright &copy; 2018 by Omnifood. All rights reserved.
-        </p>
+        <p>Copyright &copy; 2018 by Omnifood. All rights reserved.</p>
       </div>
     </footer>
 
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
-
