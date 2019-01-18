@@ -21,3 +21,28 @@
 @mixin border() {
   border: 2px solid gray;
 }
+
+// === MEDIA  QUERIES ===
+@mixin desktop() {
+  @media only screen and (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin big-tablet() {
+  @media only screen and (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin small-tablet() {
+  @media only screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mobile() {
+  @media only screen and (max-width: 480px) {
+    @content;
+  }
+}
