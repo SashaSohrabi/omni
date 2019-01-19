@@ -17,6 +17,9 @@
   font-weight: 300;
   font-size: 20px;
   text-rendering: optimizeLegibility;
+  @include big-tablet {
+    font-size: 18px;
+  }
 }
 
 /*LINKS*/
@@ -38,6 +41,9 @@ a {
 .row {
   max-width: 1140px;
   margin: 0 auto;
+  @include desktop {
+    padding: 0 2%;
+  }
 }
 
 .box {
@@ -132,6 +138,9 @@ input[type="submit"] {
 
 section {
   padding: 80px 0;
+  @include big-tablet {
+    padding: 60px 0;
+  }
 }
 
 /* ICONS */
