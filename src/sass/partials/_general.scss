@@ -10,15 +10,20 @@
   }
 }
 
-:root {
+html,
+body {
   background: #fff;
   color: $grey;
   font-family: "Lato", "Arial", sans-serif;
   font-weight: 300;
   font-size: 20px;
   text-rendering: optimizeLegibility;
+  overflow-x: hidden;
   @include big-tablet {
     font-size: 18px;
+  }
+  @include small-tablet {
+    font-size: 16px;
   }
 }
 
@@ -43,6 +48,16 @@ a {
   margin: 0 auto;
   @include desktop {
     padding: 0 2%;
+  }
+  @include small-tablet {
+    padding: 0 4%;
+  }
+}
+
+.col {
+  @include small-tablet {
+    width: 100%;
+    margin: 0 0 4% 0;
   }
 }
 
@@ -70,6 +85,9 @@ h1 {
   color: #fff;
   font-size: 2.4rem;
   word-spacing: 4px;
+  @include small-tablet {
+    font-size: 1.8rem;
+  }
 }
 
 h2 {
@@ -77,6 +95,9 @@ h2 {
   word-spacing: 2px;
   text-align: center;
   margin-bottom: 30px;
+  @include small-tablet {
+    font-size: 1.5rem;
+  }
 }
 
 h2:after {
@@ -92,6 +113,9 @@ h2:after {
 h3 {
   font-size: 1.1rem;
   margin-bottom: 15px;
+  @include big-tablet {
+    font-size: 1rem;
+  }
 }
 
 /* BUTTONS */
@@ -141,6 +165,12 @@ section {
   @include big-tablet {
     padding: 60px 0;
   }
+  @include small-tablet {
+    padding: 30px 0;
+  }
+  @include mobile {
+    padding: 25px 0;
+  }
 }
 
 /* ICONS */
@@ -161,4 +191,8 @@ section {
   vertical-align: middle;
   margin-top: -4px;
   margin-right: 10px;
+  @include big-tablet {
+    width: 15px;
+    margin-right: 5px;
+  }
 }

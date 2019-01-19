@@ -37,6 +37,13 @@
   input[type="checkbox"] {
     margin: 10px 5px 10px 0;
   }
+
+  @include big-tablet {
+    width: 80%;
+  }
+  @include mobile {
+    width: 100%;
+  }
 }
 
 .form-group {
@@ -72,7 +79,7 @@
     content: "";
     display: block;
     position: absolute;
-    top: 4px;
+    top: 3px;
     left: 8px;
     width: 6px;
     height: 14px;

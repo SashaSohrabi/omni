@@ -18,6 +18,11 @@ footer {
         color: #ddd;
       }
     }
+
+    @include small-tablet {
+      float: none;
+      text-align: center;
+    }
   }
 
   .social-links {
@@ -57,6 +62,10 @@ footer {
         color: #517fa4;
       }
     }
+    @include small-tablet {
+      float: none;
+      text-align: center;
+    }
   }
 
   li {
@@ -71,5 +80,13 @@ footer {
     color: #888;
     text-align: center;
     margin-top: 20px;
+  }
+
+  @include small-tablet {
+    padding: 30px;
+  }
+
+  @include mobile {
+    padding: 20px;
   }
 }
