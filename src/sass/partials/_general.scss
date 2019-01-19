@@ -179,6 +179,10 @@ section {
   display: block;
   color: $orange;
   margin-bottom: 10px;
+  transition: color 0.2s;
+  &:hover {
+    color: $grey;
+  }
 }
 
 .icon-small {

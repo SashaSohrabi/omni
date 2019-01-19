@@ -69,6 +69,11 @@
     font-size: 1.5rem;
     margin-right: 25px;
     margin-top: -5px;
+    transition: all 0.2s;
+    &:hover {
+      color: $grey;
+      border: 2px solid $grey;
+    }
     @include small-tablet {
       height: 40px;
       width: 40px;
