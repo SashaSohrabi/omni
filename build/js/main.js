@@ -1,5 +1,6 @@
 "use strict";
 
+/* Form validation */
 $(".contact-form").validate({
   rules: {
     email: {
@@ -15,3 +16,16 @@ $(".contact-form").validate({
     }
   }
 }); // end validate
+
+/* Sticky navigation */
+var waypoint = new Waypoint({
+  element: document.getElementById("features"),
+  handler: function(direction) {
+    if (direction == "down") {
+      $("nav").addClass("sticky");
+    } else {
+      $("nav").removeClass("sticky");
+    }
+  },
+  offset: 60
+});

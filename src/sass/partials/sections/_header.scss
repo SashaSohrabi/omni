@@ -30,6 +30,15 @@ header {
   margin-top: 20px;
 }
 
+.logo-black {
+  display: none;
+  width: 50px;
+  height: auto;
+  float: left;
+  margin: 5px 0;
+}
+
+/* Main Navigation */
 .main-nav {
   float: right;
   list-style: none;
@@ -59,4 +68,45 @@ header {
   @include small-tablet {
     display: none;
   }
+}
+
+/* Sticky navigation */
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 2px 2px #efefef;
+  z-index: 10;
+
+  .main-nav {
+    margin-top: 18px;
+
+    li {
+      display: inline-block;
+      margin-left: 40px;
+      a {
+        &:link,
+        &:visited {
+          padding: 16px 0;
+          color: $grey;
+        }
+
+        &:hover,
+        &:active {
+          border-bottom: 2px solid $orange;
+        }
+      }
+    }
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .logo-black {
+    display: block;
+  }
+  transition: all 0.2s;
 }
