@@ -39,6 +39,7 @@ $(".js--wp-1").waypoint(
     offset: "50%"
   }
 );
+
 $(".js--wp-2").waypoint(
   function(direction) {
     $(".js--wp-2").addClass("animated fadeInUp");
@@ -47,6 +48,7 @@ $(".js--wp-2").waypoint(
     offset: "50%"
   }
 );
+
 $(".js--wp-3").waypoint(
   function(direction) {
     $(".js--wp-3").addClass("animated fadeIn");
@@ -55,6 +57,7 @@ $(".js--wp-3").waypoint(
     offset: "50%"
   }
 );
+
 $(".js--wp-4").waypoint(
   function(direction) {
     $(".js--wp-4").addClass("animated pulse");
@@ -63,3 +66,21 @@ $(".js--wp-4").waypoint(
     offset: "50%"
   }
 );
+
+/* Mobile navigation */
+$(".mobile-nav-icon").click(function() {
+  var nav = $(".main-nav");
+  var icon = $(".mobile-nav-icon i");
+
+  if (icon.hasClass("ion-navicon-round")) {
+    icon.addClass("ion-close-round");
+    icon.removeClass("ion-navicon-round");
+    nav.addClass("open");
+    nav.removeClass("close");
+  } else {
+    icon.addClass("ion-navicon-round");
+    icon.removeClass("ion-close-round");
+    nav.addClass("close");
+    nav.removeClass("open");
+  }
+});

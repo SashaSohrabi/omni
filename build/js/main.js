@@ -52,3 +52,21 @@ $(".js--wp-4").waypoint(function (direction) {
 }, {
   offset: "50%"
 });
+/* Mobile navigation */
+
+$(".mobile-nav-icon").click(function () {
+  var nav = $(".main-nav");
+  var icon = $(".mobile-nav-icon i");
+
+  if (icon.hasClass("ion-navicon-round")) {
+    icon.addClass("ion-close-round");
+    icon.removeClass("ion-navicon-round");
+    nav.addClass("open");
+    nav.removeClass("close");
+  } else {
+    icon.addClass("ion-navicon-round");
+    icon.removeClass("ion-close-round");
+    nav.addClass("close");
+    nav.removeClass("open");
+  }
+});
